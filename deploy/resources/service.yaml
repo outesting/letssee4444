@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: letssee4444
+spec:
+  selector:
+    app: letssee4444
+  ports:
+  - name: web
+    nodePort: 30084
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  type: NodePort
